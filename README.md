@@ -38,6 +38,8 @@ APCA_API_SECRET_KEY=your_alpaca_secret_key
 OPENAI_API_KEY=your_openai_api_key
 ```
 
+> Do **NOT** upload the real `.env` file to GitHub. Instead, include a `.env.example` file in the repository that shows the required keys without actual values.
+
 ## Usage
 
 1. Start the bot:
@@ -52,6 +54,16 @@ node server.js
 * Subscribe to all news events.
 * For each news headline, query GPT-3.5 to return a positivity score (1–100).
 * Automatically place buy orders if score >= 70, and sell/close positions if <= 30.
+
+## Files to Upload to GitHub
+
+* `server.js` — Main trading bot logic.
+* `package.json` — Project dependencies and metadata.
+* `package-lock.json` — Locked versions of dependencies.
+* `.env.example` — Sample environment variables file (no real keys).
+* `README.md` — Project documentation and usage instructions (this file).
+
+Do **not** upload your real `.env` file or the `node_modules` folder.
 
 ## Notes
 
